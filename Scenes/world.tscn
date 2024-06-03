@@ -1,6 +1,7 @@
-[gd_scene load_steps=15 format=3 uid="uid://c4jopkosy4obu"]
+[gd_scene load_steps=16 format=3 uid="uid://c4jopkosy4obu"]
 
 [ext_resource type="PackedScene" uid="uid://ca3ia41ji127j" path="res://Scenes/Player.tscn" id="1_hdnam"]
+[ext_resource type="Texture2D" uid="uid://caqhbcq0el3vy" path="res://Background/backgroundddd.png" id="1_wqmgn"]
 [ext_resource type="PackedScene" uid="uid://bxw56h58fhiel" path="res://Scenes/killzone.tscn" id="2_c1j2s"]
 [ext_resource type="PackedScene" uid="uid://dfmp8ldasrlfi" path="res://Scenes/coin.tscn" id="3_y2n1n"]
 [ext_resource type="Texture2D" uid="uid://cgu7xr5hi2oaq" path="res://Background/sheet 1.png" id="4_duawy"]
@@ -116,6 +117,12 @@ _data = {
 }
 
 [node name="Game" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(349.5, 387.5)
+scale = Vector2(4.48828, 3.19141)
+texture = ExtResource("1_wqmgn")
 
 [node name="Player" parent="." instance=ExtResource("1_hdnam")]
 position = Vector2(58, 549)
